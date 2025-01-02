@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBazar</title>
+    <!-- *Swipper Cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/bootstrap file/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/slick.css">
+    <!-- VenoBox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.css">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+</head>
+
+<body class="pe-0">
+    <header>
+        <!-- Header Top SECTION -->
+        <section id="headerTop">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 ">
+                        <p class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <span class="iconify-icon"><iconify-icon icon="carbon:location"></iconify-icon></span>
+                            Store Location: Lincoln- 344, Illinois, Chicago, USA
+                        </p>
+                    </div>
+                    <div class="col-lg-6 text-end d-none d-lg-block">
+                        <ul>
+                            <li class="d-inline-block">
+                                <form action="">
+                                    <select>
+                                        <option value="">Eng</option>
+                                        <option value="">Bng</option>
+                                    </select>
+                                    <select>
+                                        <option value="">USD</option>
+                                        <option value="">BDT</option>
+                                    </select>
+                                </form>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="#">Sign In / Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header Top SECTION ENDS -->
+
+        <!-- header middle part start -->
+        <section class="headerMiddle d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 ">
+                        <img class="img-fluid" src="./images/Logo (1).png" alt="">
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="search-box">
+                            <div class="search d-flex justify-content-center">
+                                <span class="iconify-icon"> </span>
+                                <input type="search" name="search" id="search" placeholder="Search for products">
+                                <a href="#"><button type="submit">Search</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="cart-section">
+                            <ul class="mb-0 ps-0">
+                                <li class="d-inline-block">
+                                    <span class="iconify-icon">
+                                        <iconify-icon icon="iconoir:heart" width="32" height="35"></iconify-icon>
+                                    </span>
+                                </li>
+                                <li class="d-inline-block">
+                                    <a href="#">
+                                        <div class="cart d-flex">
+                                            <div class="cart-left">
+                                                <span class="iconify-icon relative">
+                                                    <iconify-icon icon="lets-icons:bag-alt-light" width="35"
+                                                        height="40"></iconify-icon>
+                                                </span>
+                                                <span class="top">2</span>
+                                            </div>
+                                            <div class="cart-right ">
+                                                <p class="mb-1">Shopping cart:</p>
+                                                <h4>$57.00</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--mobile header middle section -->
+        <section class="mobileHeaderMiddle d-block d-lg-none">
+            <div class="row align-items-center justify-content-center m-0 py-2">
+                <div class="col-3 text-center">
+                    <a data-bs-toggle="offcanvas" role="button" href="#sidebar" class="text-dark">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="heroicons-solid:menu-alt-1" width="20" height="20"></iconify-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-6 text-center">
+                    <a href="./index.html"><img src="./images/Logo (1).png" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-3 text-center">
+                    <span class="iconify-icon">
+                        <iconify-icon icon="tdesign:search" width="24" height="24"></iconify-icon>
+                    </span>
+                </div>
+            </div>
+            <div class="down-menu">
+                <div class="row">
+                    <div class="col text-center">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="tabler:home-filled" width="24" height="24"></iconify-icon>
+                        </span>
+                    </div>
+                    <div class="col text-center">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="iconoir:shop" width="24" height="24"></iconify-icon>
+                        </span>
+                    </div>
+                    <div class="col text-center">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="lets-icons:bag-alt-light" width="24" height="24"></iconify-icon>
+                        </span>
+                    </div>
+                    <div class="col text-center">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="iconamoon:profile-fill" width="24" height="24"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- off canvas -->
+            <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="sidebar"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header ">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        <a href="./index.html"><img src="./images/Logo (1).png">
+                    </h5>
+                    <button class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="dropdown mt-3">
+                                    <button class="btn btn-success dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Shop
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">Alu</a></li>
+                                        <li><a class="dropdown-item" href="#">Tomato</a></li>
+                                        <li><a class="dropdown-item" href="#">Lady's Finger</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--mobile header middle section end-->
+        <!-- header middle part ends here -->
+
+        <!-- header bottom section starts here.  -->
+        <section id="header-bottom" class="header-bottom d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3 d-flex align-items-center relative">
+                        <button class="allCat">
+                            <iconify-icon icon="mingcute:menu-fill" width="20" height="20"></iconify-icon>
+                            <span class="mx-3">All Categories</span>
+                            <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"></iconify-icon>
+                        </button>
+
+                        <div class="ddown">
+                            <ul class="m-0 p-0 text-center">
+                                <li class="ddLink"><a href="#">Home</a></li>
+                                <li class="ddLink"><a href="#">Shop</a></li>
+                                <li class="ddLink"><a href="#">About</a></li>
+                                <li class="ddLink"><a href="#">Items</a></li>
+                                <li class="ddLink"><a href="#">Best</a></li>
+                                <li class="ddLink"><a href="#">Collection</a></li>
+                                <li class="ddLink"><a href="#">xyz</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-7 navLink">
+                        <ul class="d-flex align-items-center mb-0 text-decoration-none gap-5">
+                            <li class="d-inline-block"><a href="#home">Home</a></li>
+                            <li class="d-inline-block"><a href="#shop">Shop</a></li>
+                            <li class="d-inline-block"><a href="#pages">Pages</a></li>
+                            <li class="d-inline-block"><a href="#feedback">Blogs</a></li>
+                            <li class="d-inline-block"><a href="#about">About Us</a></li>
+                            <li class="d-inline-block"><a href="#footer">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <a href="#">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <span style="line-height: 5px; margin-right: 5px;" class="iconify-icon"><iconify-icon
+                                        icon="mdi:add-call" width="20" height="20"></iconify-icon></span>
+                                <a href="tel:+002457814"><span>+002457814</span></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- header bottom section ends here.  -->
+
+        <!-- main section starts here -->
+        <main>
+            <section class="main-first" id="home">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-7 col-12 main-head">
+                            <img class="img-fluid" src="./images/Image.png" alt="">
+                            <span class="off">
+                                <div>
+                                    <p>70%</p>
+                                    <p style="font-size: 16px;" class="">off</p>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="col-lg-5 col-12 order-2 order-lg-0 text">
+                            <p class="text-start"> WELCOME TO OUR SHOPERY</p>
+                            <h2>Fresh & Healthy
+                                Organic Food</h2>
+                            <p class="p2 text-start">Free shipping on all your order. we deliver, you enjoy</p>
+                            <div>
+                                <a href="#">
+                                    <button class="d-flex justify-content-start align-items-center">
+                                        <p class="para">Shop Now </p>
+                                        <span class="iconify-icon ms-2 text-white">
+                                            <iconify-icon icon="tabler:arrow-right" width="24"
+                                                height="24"></iconify-icon>
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="features" id="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-6 sec">
+                            <div class="all">
+                                <div class="img-div"><img src="./images/delivery-truck 1.png" alt=""></div>
+                                <div class="cnt">
+                                    <p>Free Shipping</p>
+                                    <span>Free shipping with discount</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 sec">
+                            <div class="all">
+                                <div class="img-div"><img src="./images/delivery-truck 1.png" alt=""></div>
+                                <div class="cnt">
+                                    <p>Free Shipping</p>
+                                    <span>Free shipping with discount</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 sec">
+                            <div class="all">
+                                <div class="img-div"><img src="./images/delivery-truck 1.png" alt=""></div>
+                                <div class="cnt">
+                                    <p>Free Shipping</p>
+                                    <span>Free shipping with discount</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 sec ">
+                            <div class="all">
+                                <div class="img-div"><img src="./images/delivery-truck 1.png" alt=""></div>
+                                <div class="cnt">
+                                    <p>Free Shipping</p>
+                                    <span>Free shipping with discount</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="products" id="shop">
+                <div class="container">
+                    <h2>Introducing Our Products</h2>
+                    <div class="pro-top">
+                        <ul class="d-flex justify-content-center align-items-center">
+                            <!-- mixit try -->
+                            <li><button class="border-0 " data-filter="all" type="button">All</button></li>
+                            <li><button class="border-0 " data-filter=".Fruit" type="button">Fruit</button></li>
+                            <li><button class="border-0 " data-filter=".Vegitable" type="button">Vegitable</button></li>
+                            <li><button class="border-0 " data-filter=".Meat&Fish" type="button">Meat & Fish</button>
+                            </li>
+                            <li><button class="border-0 " data-filter="all" type="button">View All</button></li>
+                        </ul>
+                    </div>
+                    <div class="all-pro" id="pages">
+                        <div class="row mixit">
+                            <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="1">
+                                <div class="all ">
+                                    <div class="img-div"><img class="img-fluid w-100 w-100" src="./images/Image (1).png"
+                                            alt="">
+                                    </div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="2">
+                                <div class="all ">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png"
+                                            alt="">
+                                    </div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Vegitable" data-order="3">
+                                <div class="all ">
+                                    <div class="img-div bg-white"><img class="img-fluid" src="./images/Image (3).png"
+                                            alt=""></div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Vegitable" data-order="4">
+                                <div class="all ">
+                                    <div class="img-div bg-white"><img class="img-fluid"
+                                            src="./images/Product Image.png" alt=""></div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="5">
+                                <div class="all ">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png"
+                                            alt="">
+                                    </div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="6">
+                                <div class="all ">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png"
+                                            alt="">
+                                    </div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Vegitable" data-order="7">
+                                <div class="all ">
+                                    <div class="img-div bg-white"><img class="img-fluid" src="./images/Image (3).png"
+                                            alt=""></div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Vegitable" data-order="8">
+                                <div class="all ">
+                                    <div class="img-div bg-white"><img class="img-fluid"
+                                            src="./images/Product Image.png" alt=""></div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2 star">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="9">
+                                <div class="all ">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png"
+                                            alt="">
+                                    </div>
+                                    <div class="row justify-content-between align-items-center px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center ">
+                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="10">
+                                <div class="all ">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png"
+                                            alt="">
+                                    </div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Vegitable" data-order="11">
+                                <div class="all ">
+                                    <div class="img-div bg-white"><img class="img-fluid" src="./images/Image (3).png"
+                                            alt=""></div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Vegitable" data-order="12">
+                                <div class="all ">
+                                    <div class="img-div bg-white"><img class="img-fluid"
+                                            src="./images/Product Image.png" alt=""></div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="13">
+                                <div class="all ">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png"
+                                            alt="">
+                                    </div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="14">
+                                <div class="all ">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png"
+                                            alt="">
+                                    </div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Vegitable" data-order="15">
+                                <div class="all ">
+                                    <div class="img-div bg-white"><img class="img-fluid" src="./images/Image (3).png"
+                                            alt=""></div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 pro p-0 mix Vegitable" data-order="16">
+                                <div class="all ">
+                                    <div class="img-div bg-white"><img class="img-fluid"
+                                            src="./images/Product Image.png" alt=""></div>
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
+                                        <div class=" col-8 p-0">
+                                            <h4>Green Apple</h4>
+                                            <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                            <span class="pt-2 star">
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate" width="20"
+                                                    height="20"></iconify-icon>
+                                                <iconify-icon style="color: goldenrod;"
+                                                    icon="material-symbols-light:star-rate-outline" width="20"
+                                                    height="20"></iconify-icon>
+                                            </span>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
+                                                    height="35"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                    <div class="over-off">
+                                        <div class="off">Sale 50%</div>
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="over1">
+                                                <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                            <div class="over2">
+                                                <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                        height="18"></iconify-icon></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner section -->
+
+            <section class="banner-bottom" id="drinks">
+
+
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-4 col-md-6 col-12 mb-3 mb-lg-0  ">
+                            <div class="milk">
+                                <div class="content">
+                                    <h2> 100% Fresh <br> Cow Milk </h2>
+                                    <p>Starting at <span>$14.99</span></p>
+                                    <a href="#">
+                                        <button class="shopBTN d-flex justify-content-center  align-items-center gap-1"
+                                            type="button"> <span> Shop Now</span> <span><iconify-icon
+                                                    icon="tabler:arrow-right" width="24"
+                                                    height="24"></iconify-icon></span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-3 mb-lg-0 ">
+                            <div class="soft-drinks">
+                                <div class=" content">
+                                    <h2 class="text-dark text-end"> 100% Fresh <br> Cow Milk </h2>
+                                    <p class="text-dark text-end">Starting at <span class="text-dark">$14.99</span></p>
+                                    <a href="#">
+                                        <button class="shopBTN d-flex justify-content-center  align-items-center gap-1"
+                                            type="button"> <span> Shop Now</span> <span><iconify-icon
+                                                    icon="tabler:arrow-right" width="24"
+                                                    height="24"></iconify-icon></span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="b-fast">
+                                <div class="content">
+                                    <h2 class="text-dark"> 100% Fresh <br> Cow Milk </h2>
+                                    <p class="text-dark">Starting at <span class="text-dark">$14.99</span></p>
+                                    <a href="#">
+                                        <button class="shopBTN d-flex justify-content-center  align-items-center gap-1"
+                                            type="button"> <span> Shop Now</span> <span><iconify-icon
+                                                    icon="tabler:arrow-right" width="24"
+                                                    height="24"></iconify-icon></span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- banner section ends here -->
+
+
+
+
+
+            <!-- best deal section -->
+            <section class="deal-section">
+                <div class="row m-0 p-0 text-center ">
+                    <div class="col-lg-4 order-3 order-lg-1 ">
+                        <div class="sobji">
+                            <img class="img-fluid" src="./images/sobji 2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center order-2 order-lg-2">
+                        <div class="sobji-cnt">
+                            <span>Best Deal</span>
+                            <h3>Our Special Products Deal of the Month</h3>
+                            <div class="timer">
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <div class="clock d-flex justify-content-center align-items-center">
+                                            <div class="time-unit" id="days">00</div>
+                                            <div>:</div>
+                                            <div class="time-unit" id="hours">02</div>
+                                            <div>:</div>
+                                            <div class="time-unit" id="minutes">18</div>
+                                            <div>:</div>
+                                            <div class="time-unit" id="seconds">46</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sobji-btn ">
+                                <a href="#">
+                                    <button class="d-flex justify-content-start align-items-center shopBtn">
+                                        <p class="para">Shop Now </p>
+                                        <span class="iconify-icon ms-2 text-white" style="line-height: 10px;">
+                                            <iconify-icon icon="tabler:arrow-right" width="24"
+                                                height="24"></iconify-icon>
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  order-1 order-lg-3">
+                        <div class="sobji-man mt-4">
+                            <img class="img-fluid" src="./images/sobji man.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feature 2 section -->
+
+            <section class="feature2">
+                <div class="container">
+                    <h2 class="h2">Featured Products</h2>
+                    <div class="row slick">
+                        <div class=" col-md  pro p-0 mix slider Fruit" data-order="1">
+                            <div class="all ">
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png" alt="">
+                                </div>
+                                <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class=" col-8 p-0">
+                                        <h4>Green Apple</h4>
+                                        <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                        <span class="pt-2">
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate-outline" width="20"
+                                                height="20"></iconify-icon>
+                                        </span>
+                                    </div>
+                                    <div class="col-4 p-0 bag d-flex justify-content-center align-items-center ">
+                                        <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                                height="35"></iconify-icon></span>
+                                    </div>
+                                </div>
+                                <div class="over-off">
+                                    <div class="off">Sale 50%</div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <div class="over1">
+                                            <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                        <div class="over2">
+                                            <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md  pro p-0 mix slider Fruit">
+                            <div class="all ">
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png" alt="">
+                                </div>
+                                <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class=" col-8 p-0">
+                                        <h4>Green Apple</h4>
+                                        <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                        <span class="pt-2">
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate-outline" width="20"
+                                                height="20"></iconify-icon>
+                                        </span>
+                                    </div>
+                                    <div class="col-4 p-0 bag d-flex justify-content-center align-items-center ">
+                                        <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                                height="35"></iconify-icon></span>
+                                    </div>
+                                </div>
+                                <div class="over-off">
+                                    <div class="off">Sale 50%</div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <div class="over1">
+                                            <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                        <div class="over2">
+                                            <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md  pro p-0 mix slider Fruit">
+                            <div class="all ">
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image 6.png" alt="">
+                                </div>
+                                <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class=" col-8 p-0">
+                                        <h4>Green Apple</h4>
+                                        <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                        <span class="pt-2">
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate-outline" width="20"
+                                                height="20"></iconify-icon>
+                                        </span>
+                                    </div>
+                                    <div class="col-4 p-0 bag d-flex justify-content-center align-items-center ">
+                                        <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                                height="35"></iconify-icon></span>
+                                    </div>
+                                </div>
+                                <div class="over-off">
+                                    <div class="off">Sale 50%</div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <div class="over1">
+                                            <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                        <div class="over2">
+                                            <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md  pro p-0 mix slider Fruit">
+                            <div class="all ">
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/image 5.png" alt="">
+                                </div>
+                                <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class=" col-8 p-0">
+                                        <h4>Green Apple</h4>
+                                        <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                        <span class="pt-2">
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate-outline" width="20"
+                                                height="20"></iconify-icon>
+                                        </span>
+                                    </div>
+                                    <div class="col-4 p-0 bag d-flex justify-content-center align-items-center ">
+                                        <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                                height="35"></iconify-icon></span>
+                                    </div>
+                                </div>
+                                <div class="over-off">
+                                    <div class="off">Sale 50%</div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <div class="over1">
+                                            <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                        <div class="over2">
+                                            <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md  pro p-0 mix slider Fruit">
+                            <div class="all ">
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image 7.png" alt="">
+                                </div>
+                                <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class=" col-8 p-0">
+                                        <h4>Green Apple</h4>
+                                        <p>$14.99<span class="ms-2">$20.99</span> </p>
+                                        <span class="pt-2">
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate" width="20"
+                                                height="20"></iconify-icon>
+                                            <iconify-icon style="color: goldenrod;"
+                                                icon="material-symbols-light:star-rate-outline" width="20"
+                                                height="20"></iconify-icon>
+                                        </span>
+                                    </div>
+                                    <div class="col-4 p-0 bag d-flex justify-content-center align-items-center ">
+                                        <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                                height="35"></iconify-icon></span>
+                                    </div>
+                                </div>
+                                <div class="over-off">
+                                    <div class="off">Sale 50%</div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <div class="over1">
+                                            <span class="iconify-icon"><iconify-icon icon="mynaui:heart" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                        <div class="over2">
+                                            <span class="iconify-icon"><iconify-icon icon="iconamoon:eye" width="18"
+                                                    height="18"></iconify-icon></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Feature 2 end section -->
+
+            <!-- feedback section starts here -->
+            <section id="feedback">
+                <div class="container">
+                    <h2>What our Clients Says</h2>
+                    <div class="row ">
+                        <div class="col-lg-4 col-md-6 col-12 p-0">
+                            <div class="cd">
+                                <div class="cd-body text-center bg-white">
+                                    <span class="text-center"><img style="height: 32px; width: 40px; margin-top: 32px;"
+                                            src="./images/Vector.png" alt=""></span>
+                                    <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat
+                                        massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem
+                                        laoreet ultricies ele. ”</p>
+                                    <span><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
+                                <div class="cd-footer bg-transparent border-top-0 text-center">
+                                    <div class="client-img">
+                                        <img src="./images/client1.png" alt="">
+                                        <p>Jenny Wilson</p>
+                                        <span>Customer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 p-0">
+                            <div class="cd">
+                                <div class="cd-body text-center bg-white">
+                                    <span class="text-center"><img style="height: 32px; width: 40px; margin-top: 32px;"
+                                            src="./images/Vector.png" alt=""></span>
+                                    <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat
+                                        massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem
+                                        laoreet ultricies ele. ”</p>
+                                    <span><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
+                                <div class="cd-footer bg-transparent border-top-0 text-center">
+                                    <div class="client-img">
+                                        <img src="./images/client2.png" alt="">
+                                        <p>Jenny Wilson</p>
+                                        <span>Customer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 p-0">
+                            <div class="cd">
+                                <div class="cd-body text-center bg-white">
+                                    <span class="text-center"><img style="height: 32px; width: 40px; margin-top: 32px;"
+                                            src="./images/Vector.png" alt=""></span>
+                                    <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat
+                                        massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem
+                                        laoreet ultricies ele. ”</p>
+                                    <span><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24"
+                                            height="24"></iconify-icon></span>
+                                </div>
+                                <div class="cd-footer bg-transparent border-top-0 text-center">
+                                    <div class="client-img">
+                                        <img src="./images/client1.png" alt="">
+                                        <p>Jenny Wilson</p>
+                                        <span>Customer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- feedback section ends here -->
+
+            <!-- video sec st -->
+            <!-- <section id="video-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="pop-video">
+                            <a class="popup-vimeo" href="https://www.youtube.com/embed/qQY9Y8kK5eI?si=XQwT5-7zuc8TkW9d"
+                                title="YouTube video player">
+                                <img class="img-fluid" src="./images/thumbnail.png" alt="">
+                            </a><br>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- video sec end -->
+
+            <!-- news section starts here -->
+            <section id="news-section">
+                <div class="container">
+                    <h2 class="text-center">Latest News</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news-card ">
+                                <img class="img-fluid" src="./images/news1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <div class="news-card ">
+                                <img class="img-fluid w-100" src="./images/news1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <div class="news-card">
+                                <img class="img-fluid" src="./images/news3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- news sec  .. end here -->
+        </main>
+
+        <!-- main section ends here -->
+
+        <!-- footer section starts here  -->
+
+        <section id="footer">
+            <hr>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row justify-content-center align-items-center ">
+                        <div class="col-3">
+                            <a href="#home"><img class="img-fluid" src="./images/Logo (1).png" alt=""></a>
+                        </div>
+                        <div class="col-4 d-none d-md-block">
+                            <h4>Subcribe our Newsletter</h4>
+                            <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                        </div>
+                        <div class="col-5 subscribe">
+                            <input type="text" placeholder="your email address ">
+                            <button id="subscribe" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom">
+                <div class="container">
+                    <div class="row footer-group justify-content-center">
+                        <div class="col-4">
+                            <h5>About Shopery</h4>
+                                <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum
+                                    magna congue nec. </p>
+                                <div class="contact">
+                                    <a href="tel:+(219) 555-0114">(219) 555-0114</a>
+                                    <span> or </span>
+                                    <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a>
+                                </div>
+                        </div>
+                        <div class="col">
+                            <h5>My contacts</h5>
+                            <ul>
+                                <li><a href="">My Account</a></li>
+                                <li><a href="">Order History</a></li>
+                                <li><a href="">Shopping Cart</a></li>
+                                <li><a href="">Wishlist</a></li>
+                                <li><a href="">Settings</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Helps</h5>
+                            <ul>
+                                <li><a href="">Contacts</a></li>
+                                <li><a href="">Faqs</a></li>
+                                <li><a href="">Terms & Condition</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col d-none d-lg-inline-block">
+                            <h5>Proxy</h5>
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#shop">Shop</a></li>
+                                <li><a href="#product">Product</a></li>
+                                <li><a href="">Products details</a></li>
+                                <li><a href="">Track Order</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3 d-none d-lg-inline-block">
+                            <h5>Instagram</h5>
+                            <div class="row image">
+                                <div class="col-3">
+                                    <a href="#"><img src="./images/insta  img1.png" alt=""></a><br>
+                                    <a href="#"><img src="./images/insta  img1.png" alt=""></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#"><img src="./images/insta img2.png" alt=""></a>
+                                    <a href="#"><img src="./images/insta img2.png" alt=""></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#"><img src="./images/insta img3.png" alt=""></a>
+                                    <a href="#"><img src="./images/insta img3.png" alt=""></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#"><img src="./images/insta img4.png" alt=""></a>
+                                    <a href="#"><img src="./images/insta img4.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="copy-right">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-3">
+                                    <div class="media">
+                                        <span><iconify-icon icon="ri:facebook-fill" width="30"
+                                                height="30"></iconify-icon></span>
+                                        <span><iconify-icon icon="ri:twitter-fill" width="30"
+                                                height="30"></iconify-icon></span>
+                                        <span><iconify-icon icon="ri:pinterest-fill" width="30"
+                                                height="30"></iconify-icon></span>
+                                        <span><iconify-icon icon="ri:instagram-fill" width="30"
+                                                height="30"></iconify-icon></span>
+                                    </div>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <p>Shopery eCommerce © 2021. All Rights Reserved</p>
+                                </div>
+                                <div class="col-4 pay-method text-end">
+                                    <span><img src="./images/Payment Method.png" alt=""></span>
+                                    <span><img src="./images/visa.png" alt=""></span>
+                                    <span><img src="./images/discover.png" alt=""></span>
+                                    <span><img src="./images/mastercard.png" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- footer section  ends here  -->
+
+
+        <!-- back to top button -->
+        <button id="backToTop" title="Go to top">
+            <span class="iconify-icon">
+                <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"></iconify-icon>
+            </span>
+        </button>
+
+
+
+        <!-- links here.. -->
+        <script src="./js file/bootstrap.bundle.min.js"></script>
+        <script src="./js file/jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+        <!-- VenoBox JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
+
+        <!-- Magnific Popup core JS file -->
+        <script src="magnific-popup/jquery.magnific-popup.js"></script>
+        <script src="./js file/slick.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js file/main.js"></script>
+</body>
+
+</html>

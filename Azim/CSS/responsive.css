@@ -1,0 +1,354 @@
+@media (max-width:  576px) {
+  #headerTop p span {
+    /* font-size: 14px; */
+  }
+  #headerTop p {
+    font-weight: 400;
+    font-size:12px ;
+  }
+  .deal-section .sobji{
+    padding: 10px 40px 40px 30px;
+  }
+  .deal-section .sobji-cnt{
+    padding: 40px 0;
+  }
+  .deal-section .sobji-cnt h3 {
+    font-size: 30px;
+}
+.features .row .cnt{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.features .row .cnt p{
+font-size: 15px;
+}
+.features .row .cnt span{
+  font-size: 10px;
+}
+.all-pro .all .bag, .feature2 .all .bag {
+  border-radius: 50%;
+  padding: 13px;
+  width: 40px;
+  height: 40px;
+  outline: 1px solid var(--gray-scale-gray-–-400);
+}
+  .products h2{
+    font-size: 25px;
+  }
+  .products .pro-top ul{
+    gap: 0px;
+    margin-top: 10px;
+  }
+ .pro-top ul li button{
+    margin: 0px 8px;
+    font-size: 10px ;
+  }
+.main-first .text h2{
+  font-weight: 600;
+  font-size: 25px;
+  margin: 10px 0px;
+   }
+  .main-first .text .p2{
+  font-weight: 400;
+  font-size: 16px;
+  }
+  .main-first button{
+    padding: 12px 30px;
+    margin-top: 30px;
+  }
+  #drinks{
+    padding: 20px 0;
+  }
+  #feedback{
+    padding-top: 50px;
+  }
+  #feedback h2{
+    font-size: 30px;
+  }
+  #feedback .cd{
+    position: relative;
+    margin-bottom: 30px !important;
+    margin-right: 0;
+  }
+  #video-section{
+
+    /* overflow: auto; */
+  }
+  #video-section .pop-video{
+    margin: 0;
+  }
+  #news-section h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  #news-section .news-card{
+    margin-bottom: 15px;
+    margin-right: 0;
+   }
+  #footer  .footer-top h4{
+    font-size: 14px;
+  }
+  #footer .footer-top input{
+    padding: 10px 10px;
+    font-size: 12;
+  }
+  #footer .footer-top input::placeholder{
+    /* font-size: 12px; */
+    visibility: hidden;
+  }
+  #footer .footer-top button{      
+    padding: 12px 10px;
+    font-size: 12px;
+    height: 46px;
+  }
+  #footer-bottom{
+    margin-top: 20px;
+  }
+  #footer-bottom .footer-group{
+    padding: 16px 0;
+  }
+  #footer-bottom h4{
+    font-size: 14px;
+  }
+  #footer-bottom .footer-group h5{
+  font-size: 14px;
+  margin-bottom: 8px;
+  }
+  #footer-bottom .footer-group p , #footer-bottom .footer-group li a{
+  font-size: 8px;
+  margin-bottom: 8px;
+  }
+  #footer-bottom .footer-group .contact{
+    margin-top: 10px;
+  }
+  #footer-bottom .footer-group .contact span{
+    font-size: 10px;
+  }
+  #footer-bottom .footer-group .contact a{
+    font-size: 10px;
+  } 
+  .copy-right{
+    padding-bottom: 10px;
+  }
+  .copy-right .media span{
+    width: 30px;
+    height: 30px;
+  }  
+  #backToTop{
+    bottom: 70px;
+    right: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+  .products .pro-top ul li button{
+    margin: 0px 10px ;
+    font-size: 14px;
+  }
+    .deal-section .sobji{
+      padding: 20px 40px 40px 30px;
+    }
+    .deal-section .sobji-cnt{
+      padding: 70px 0;
+    }
+    .main-first .text h2{
+      font-weight: 600;
+      font-size: 30px;
+      margin: 10px 0px;
+       }
+      .main-first .text .p2{
+      font-weight: 400;
+      font-size: 18px;
+      }
+      .main-first button{
+        padding: 12px 30px;
+        margin-top: 30px;
+      }
+      #drinks{
+        padding: 50px 0;
+      }
+      #feedback{
+        height: auto;
+      }
+      #feedback .cd{
+        position: relative;
+        margin-bottom: 20px !important;
+        margin-right: 0;
+      }
+      #news-section .news-card{
+        margin-bottom: 15px;
+        margin-right: 0;
+       }
+       #footer  .footer-top h4{
+        font-size: 14px;
+      }
+      #footer .footer-top input{
+        padding: 12px 16px;
+      }
+      #footer .footer-top input::placeholder{
+        font-size: 16px;
+      }
+      #footer .footer-top button{      
+        padding: 12px 16px;
+        height: 50px;
+      }
+      #footer-bottom{
+        margin-top: 25px;
+      }
+      #footer-bottom .footer-group{
+        padding: 20px 0;
+      }
+      #footer-bottom h4{
+        font-size: 14px;
+      }
+      #footer-bottom .footer-group h5{
+      font-size: 14px;
+      margin-bottom: 10px;
+      }
+      #footer-bottom .footer-group p , #footer-bottom .footer-group li a{
+      font-size: 10px;
+      margin-bottom: 8px;
+      }
+      #footer-bottom .footer-group .contact{
+        margin-top: 10px;
+      }
+      #footer-bottom .footer-group .contact span{
+        font-size: 10px;
+      }
+      #footer-bottom .footer-group .contact a{
+        font-size: 10px;
+      } 
+      .copy-right{
+        padding-bottom: 20px;
+      }
+      .copy-right .media span{
+        width: 40px;
+        height: 40px;
+      }  
+      #backToTop{
+        bottom: 70px;
+        right: 10px;
+      }
+}
+
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .main-first .text{
+        width: 100%;
+    }
+    .main-first .text p{
+        font-weight: 400;
+      font-size: 18px;
+       }
+       .main-first .text h2{
+      font-weight: 600;
+      font-size: 32px;
+      margin: 10px 0px;
+       }
+      .main-first .text .p2{
+      font-weight: 400;
+      font-size: 16px;
+      }
+      .main-first button{
+        padding: 12px 30px;
+        margin-top: 30px;
+      }
+      .features .sec{
+        border-right: 1px solid var(--branding-success-bright);
+        border-bottom: 1px solid var(--branding-success-bright);
+      }
+      .features .sec:nth-child(2){
+        border-right: none;
+      }
+      .features .sec:nth-child(3){
+        border-bottom: none;
+      }
+      .products .pro-top ul li button{
+        margin: 0px 10px ;
+      }
+
+      .smBan2 .sm-ban .sm-ban-cnt {
+        position: absolute;
+        top: 35px;
+        left: 23%;
+    }
+
+    .deal-section .sobji-cnt h3{
+    font-size: 35px;
+    text-align: center;
+    }
+    
+    .deal-section .sobji{
+      padding: 20px 70px 80px 80px;
+    }
+    .deal-section .sobji-cnt{
+      padding: 80px 0;
+    }
+    #drinks{
+      padding: 50px 0;
+    }
+    #feedback{
+      height: auto;
+    }
+    #feedback .cd{
+      position: relative;
+      margin-bottom: 30px !important;
+      margin-right: 0;
+    }
+    #news-section .news-card{
+     margin-bottom: 15px;
+    }
+
+    /* footer section here */
+    #footer  .footer-top h4{
+      font-size: 14px;
+    }
+    #footer .footer-top input{
+      padding: 12px 16px;
+    }
+    #footer .footer-top input::placeholder{
+      font-size: 16px;
+    }
+    #footer .footer-top button{      
+      padding: 12px 16px;
+      height: 50px;
+    }
+    #footer-bottom{
+      margin-top: 25px;
+    }
+    #footer-bottom .footer-group{
+      padding: 20px 0;
+    }
+    #footer-bottom h4{
+      font-size: 14px;
+    }
+    #footer-bottom .footer-group h5{
+    font-size: 14px;
+    margin-bottom: 10px;
+    }
+    #footer-bottom .footer-group p , #footer-bottom .footer-group li a{
+    font-size: 10px;
+    margin-bottom: 8px;
+    }
+    #footer-bottom .footer-group .contact{
+      margin-top: 10px;
+    }
+    #footer-bottom .footer-group .contact span{
+      font-size: 10px;
+    }
+    #footer-bottom .footer-group .contact a{
+      font-size: 10px;
+    } 
+    .copy-right{
+      padding-bottom: 20px;
+    }
+    .copy-right .media span{
+      width: 40px;
+      height: 40px;
+    }  
+    #backToTop{
+      bottom: 70px;
+      right: 10px;
+    }
+  }
+

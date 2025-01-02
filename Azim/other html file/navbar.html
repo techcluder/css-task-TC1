@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../CSS/bootstrap file/bootstrap.min.css">
+    <link rel="shortcut icon" href="../images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <header id="#navbar-placeholder">
+        <!-- Header Top SECTION -->
+        <section id="headerTop">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 ">
+                        <p class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <span class="iconify-icon"><iconify-icon icon="carbon:location"></iconify-icon></span>
+                            Store Location: Lincoln- 344, Illinois, Chicago, USA
+                        </p>
+                    </div>
+                    <div class="col-lg-6 text-end d-none d-lg-block">
+                        <ul>
+                            <li class="d-inline-block">
+                                <form action="">
+                                    <select>
+                                        <option value="">Eng</option>
+                                        <option value="">Bng</option>
+                                    </select>
+                                    <select>
+                                        <option value="">USD</option>
+                                        <option value="">BDT</option>
+                                    </select>
+                                </form>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="#">Sign In / Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header Top SECTION ENDS -->
+
+        <!-- header middle part start -->
+        <section class="headerMiddle d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 ">
+                        <img class="img-fluid" src="../images/Logo (1).png" alt="">
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="search-box">
+                            <div class="search d-flex justify-content-center">
+                                <span class="iconify-icon"> </span>
+                                <input type="search" name="search" id="search" placeholder="Search for products">
+                                <a href="#"><button type="submit">Search</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="cart-section">
+                            <ul class="mb-0 ps-0">
+                                <li class="d-inline-block">
+                                    <span class="iconify-icon">
+                                        <iconify-icon icon="iconoir:heart" width="32" height="35"></iconify-icon>
+                                    </span>
+                                </li>
+                                <li class="d-inline-block">
+                                    <a href="#">
+                                        <div class="cart d-flex">
+                                            <div class="cart-left">
+                                                <span class="iconify-icon relative">
+                                                    <iconify-icon icon="lets-icons:bag-alt-light" width="35"
+                                                        height="40"></iconify-icon>
+                                                </span>
+                                                <span class="top">2</span>
+                                            </div>
+                                            <div class="cart-right ">
+                                                <p class="mb-1">Shopping cart:</p>
+                                                <h4>$57.00</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--mobile header middle section -->
+        <section class="mobileHeaderMiddle d-block d-lg-none">
+            <div class="row align-items-center justify-content-center m-0 py-2">
+                <div class="col-3 text-center">
+                    <a data-bs-toggle="offcanvas" role="button" href="#sidebar" class="text-dark">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="heroicons-solid:menu-alt-1" width="20" height="20"></iconify-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-6 text-center">
+                    <a href="./index.html"><img src="../images/Logo (1).png" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-3 text-center">
+                    <span class="iconify-icon">
+                        <iconify-icon icon="tdesign:search" width="24" height="24"></iconify-icon>
+                    </span>
+                </div>
+            </div>
+            <div class="down-menu">
+                <div class="row">
+                    <div class="col text-center">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="tabler:home-filled" width="24" height="24"></iconify-icon>
+                        </span>
+                    </div>
+                    <div class="col text-center">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="iconoir:shop" width="24" height="24"></iconify-icon>
+                        </span>
+                    </div>
+                    <div class="col text-center">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="lets-icons:bag-alt-light" width="24" height="24"></iconify-icon>
+                        </span>
+                    </div>
+                    <div class="col text-center">
+                        <span class="iconify-icon">
+                            <iconify-icon icon="iconamoon:profile-fill" width="24" height="24"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- off canvas -->
+            <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="sidebar"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header ">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        <a href="./index.html"><img src="../images/Logo (1).png">
+                    </h5>
+                    <button class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="dropdown mt-3">
+                                    <button class="btn btn-success dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Shop
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">Alu</a></li>
+                                        <li><a class="dropdown-item" href="#">Tomato</a></li>
+                                        <li><a class="dropdown-item" href="#">Lady's Finger</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--mobile header middle section end-->
+        <!-- header middle part ends here -->
+
+        <!-- header bottom section starts here.  -->
+        <section id="header-bottom" class="header-bottom d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3 d-flex align-items-center relative">
+                        <button class="allCat">
+                            <iconify-icon icon="mingcute:menu-fill" width="20" height="20"></iconify-icon>
+                            <span class="mx-3">All Categories</span>
+                            <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"></iconify-icon>
+                        </button>
+
+                        <div class="ddown">
+                            <ul class="m-0 p-0 text-center">
+                                <li class="ddLink"><a href="#">Home</a></li>
+                                <li class="ddLink"><a href="#">Shop</a></li>
+                                <li class="ddLink"><a href="#">About</a></li>
+                                <li class="ddLink"><a href="#">Items</a></li>
+                                <li class="ddLink"><a href="#">Best</a></li>
+                                <li class="ddLink"><a href="#">Collection</a></li>
+                                <li class="ddLink"><a href="#">xyz</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-7 navLink">
+                        <ul class="d-flex align-items-center mb-0 text-decoration-none gap-5">
+                            <li class="d-inline-block"><a href="#home">Home</a></li>
+                            <li class="d-inline-block"><a href="#shop">Shop</a></li>
+                            <li class="d-inline-block"><a href="#pages">Pages</a></li>
+                            <li class="d-inline-block"><a href="#feedback">Blogs</a></li>
+                            <li class="d-inline-block"><a href="#about">About Us</a></li>
+                            <li class="d-inline-block"><a href="#footer">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <a href="#">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <span style="line-height: 5px; margin-right: 5px;" class="iconify-icon"><iconify-icon
+                                        icon="mdi:add-call" width="20" height="20"></iconify-icon></span>
+                                <a href="tel:+002457814"><span>+002457814</span></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- header bottom section ends here.  -->
+
+
+        <script src="../js file/bootstrap.bundle.min.js"></script>
+        <script src="../js file/jquery-3.7.1.min.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+        <script src="../js file/main.js"></script>
+</body>
+</html>

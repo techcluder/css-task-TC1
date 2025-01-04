@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+
+}
+.navbar{
+    background-color: orange; 
+}
+
+.navbar ul li a{
+    color: black ;
+    border-radius: 30px
+}
+.navbar ul li a:hover{
+    color: wheat;
+    background-color: blue;
+    border: 1px solid black;
+    border-radius: 30px;
+
+}
+.menue{
+    font-size: 30px;
+    border-radius:30px ;
+   
+    
+}
+.body{
+    height: 100%;
+    
+}
+
+
+.bg{
+    width: 100%;
+    height: 390px;
+    margin-top: 250px;
+    margin-left: 50px;
+}
+h2{
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.p2{
+    font-family: Arial, Helvetica, sans-serif
+    ;
+    font-size: 25px;
+}
+span{
+    font-size: 40px;
+    color: brown;
+}
+.img{
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+    
+}
+
+.latest{
+    text-align: center;
+ background-color: orange;
+    margin: 50px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bg .button{
+    font-size: 15px;
+    border-radius:30px ;
+}
+.bg .button:hover{
+    color: black;
+    background-color: red;
+    border-radius:30px ;
+}
+
+.image{
+    height: 450px;
+}
+.text{
+    padding: 15px;
+}
+.text h5{
+    font-size: 35px;
+}
+.text h4{
+    font-size: 45px;
+    font-weight: bold;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price h3{
+    font-weight: bold;
+    font-size: 45px;
+    color: red;
+}
+.price .button{
+    font-size: 30px;
+    border-radius:30px ;
+}
+.price .button:hover{
+    background-color: red;
+    border-radius:30px ;
+}
+.footer{
+    margin-top: 5px;
+    width: 100%;
+    height: 110px;
+    background-color: slategrey;
+text-align: center
+;
+}
+.footer span{
+    font-size: 13px;
+}
+.footer h1{
+    font-size: 20px;
+    padding-top: 30px;
+}
+.footer p{
+    font-size: 18px;
+}
+.fb{
+    text-decoration: none;
+    bottom: 15px;
+right: 15px;
+position: fixed;
+font-size: 20px;}
+.fb a{
+    text-decoration: none;
+    color: red;
+}
+.fb a:hover{
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+}
